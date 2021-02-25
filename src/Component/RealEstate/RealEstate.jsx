@@ -7,45 +7,6 @@ import house from "../Photo/house1.jpg"
 
 import UserProfileHeader from "../UserProfileHeader/UserProfileHeader";
 
-const menu = (
-	<Menu>
-		<Menu.Item>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				price:1.1million
-			</a>
-            <a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				color:black
-			</a>
-            <a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				condition:brand new
-			</a>
-
-		</Menu.Item>
-		{/* <Menu.Item>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.taobao.com/">
-				color:black
-			</a>
-		</Menu.Item>
-		<Menu.Item>
-			<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-				condition:Brand new
-			</a>
-		</Menu.Item> */}
-	</Menu>
-);
-
 function RealEstate() {
 	const [sideChange, setSideChange] = useState(false);
 
