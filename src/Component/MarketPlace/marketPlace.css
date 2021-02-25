@@ -1,0 +1,59 @@
+.MarketPlace {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+.MarketPlacecontentHolder {
+	height: 100%;
+	width: 100%;
+}
+.MarketPlaceContent {
+	width: 100%;
+	height: 100%;
+	/* background-color: yellow; */
+	padding: 20px;
+}
+.categoresCardHolder {
+	width: 360px;
+	height: 220px;
+	/* background-color: green; */
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px 0px rgb(41, 38, 38);
+	transition: all 200ms ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+.categoresCardHolder:hover {
+	transform: scale(1.005);
+}
+
+.CategoresCardImageHolder {
+	width: 98%;
+	height: 80%;
+	background-color:lightgray;
+}
+
+.CategoresCardImageHolder>img {
+	height:100%;
+	width:100%;
+	object-fit: cover;
+}
+
+
+.categoriesCardHolder {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+.categoriesCardHolder>h3{
+	font-weight:bold;
+	font-family: Poppins;
+	color:green;
+}

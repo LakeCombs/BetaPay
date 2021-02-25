@@ -1,0 +1,247 @@
+.userwallet {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+.Sider {
+	width: 70px;
+	height: 100%;
+	background-color: green;
+	box-shadow: 0px 2px 0px 0px lightgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 20px;
+	position: sticky;
+	top: 0px;
+}
+.Sider > img {
+	height: 43px;
+	width: 43px;
+	object-fit: contain;
+	margin-top: 40px;
+	cursor: pointer;
+	transition: all 300ms ease-out;
+}
+.Sider > img:hover {
+	transform: scale(1.08);
+}
+
+.Sider1 {
+	width: 200px;
+	height: 100%;
+	background-color: green;
+	box-shadow: 0px 2px 0px 0px lightgreen;
+	position: sticky;
+	top: 0px;
+}
+.logo {
+	width: 100%;
+	height: 80px;
+	object-fit: contain;
+	/* background-color: red; */
+}
+.logo > img {
+	width: 200px;
+	height: 100%;
+	object-fit: cover;
+}
+.sidercontent {
+	height: 43px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: red; */
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 40px;
+	border: 2px solid rgb(255, 255, 255);
+	cursor: pointer;
+	transition: all 300ms ease-out;
+}
+.sidercontent :hover {
+	transform: scale(1);
+}
+
+.sidercontent > img {
+	height: 43px;
+	width: 43px;
+	object-fit: contain;
+	cursor: pointer;
+	transition: all 300ms ease-out;
+}
+.sidercontent > h3 {
+	color: white;
+	font-family: poppins;
+	font-weight: bolder;
+}
+.TheWAlletcotent {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.logoTExt {
+	color: white;
+	font-family: poppins;
+	font-weight: bolder;
+}
+.walletcontent {
+	padding: 20px;
+}
+.WalletcontentFirstPart {
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+}
+.walletWelcomeMessage {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: auto;
+}
+.walletWelcomeMessage > h1 {
+	font-size: 25px;
+	font-family: Poppins;
+	font-weight: bold;
+	color: rgb(1, 10, 1);
+}
+.walletWelcomeMessage > button {
+	width: 500px;
+	margin: 10px;
+	height: 50px;
+	font-size: 20px;
+	font-family: Poppins;
+	color: rgb(1, 10, 1);
+	font-weight: bold;
+}
+
+
+.walletWelcomeMessage > button:hover {
+	padding-left: 3px;
+}
+
+.Walletpiggy {
+	width: 40%;
+	height: 350px;
+	object-fit: cover;
+}
+.piggy {
+	height: 100%;
+
+	width: 100%;
+}
+
+.useWalletSEcondPart {
+	display: flex;
+	width: 100%;
+	height: 300px;
+	flex-direction: row;
+	border-radius: 1px;
+	box-shadow: 0px 0px 1px 1px green;
+	margin-top: -10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.UserWalletleft {
+	height: 98%;
+	width: 50%;
+	background-image: linear-gradient(
+		to bottom left,
+		rgb(12, 121, 12),
+		rgb(61, 141, 61),
+		rgb(93, 201, 93)
+	);
+	margin-left: 2px;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+}
+
+.RecentBuy {
+	height: 98%;
+	width: 90px;
+	border-radius: 3px;
+	margin: 4px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 4px;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+
+.ProductImage {
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+}
+.sellerNAME {
+	color: rgb(128, 83, 1);
+	font-weight: bold;
+}
+.price {
+	width: 100%;
+	text-align: flex-start;
+
+	font-family: Poppins;
+}
+.price > h5 {
+	font-family: Poppins;
+	font-size: 11px;
+}
+.AmountPaid {
+	width: 100%;
+	text-align: flex-start;
+	font-family: Poppins;
+}
+.AmountPaid > h5:hover {
+	padding-left: 5px;
+}
+.AmountPaid > h5 {
+	width: 100%;
+	text-align: flex-start;
+	font-size: 12px;
+	font-family: Poppins;
+	color: green;
+}
+.Balance {
+	width: 100%;
+	text-align: flex-start;
+	font-family: Poppins;
+}
+.Balance > h5 {
+	width: 100%;
+	text-align: flex-start;
+	font-size: 12px;
+	font-family: Poppins;
+	color: red;
+}
+.Balance > h5:hover {
+	padding-left: 5px;
+}
+.RecentBuy > button {
+	background: green;
+	color: orange;
+	font-weight: bolder;
+	font-size: 14px;
+}
+.RecentBuy > button:hover {
+	color: green;
+	font-weight: bolder;
+	font-size: 14px;
+}
+.recent{
+	font-size: 20px;
+	margin-top: -30px;
+
+}

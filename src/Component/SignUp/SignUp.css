@@ -1,0 +1,118 @@
+.SignUp {
+	height: 100%;
+	width: 100vw;
+	padding-top: 30px;
+	/* background-image: url("../Photo/b.jpg"); */
+	object-fit: cover;
+	background-repeat: no-repeat center fixed;
+	background-size: cover;
+	background-image:linear-gradient(to bottom right, rgb(107, 233, 107), rgb(17, 180, 17) ,rgb(8, 92, 8));
+}
+/* .welcome{
+    width:200px;
+    height:100px;
+    background-color:green;
+} */
+/* .SignUpPlatform{
+    margin-top:20px;
+} */
+
+.welcome > h1 {
+	color: green;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.Form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	height: auto;
+	border: 2px solid green;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	box-shadow: 0px 0px 3px 3px lightgray;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.Form > label {
+	/* width:90%; */
+	font-size: 20px;
+	font-family: poppins;
+	/* outline:1px solid green; */
+}
+.Form > input {
+	width: 100%;
+	font-family: poppin;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 2px solid green;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+.Form > link > input {
+	width: 100%;
+	font-family: poppin;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 2px solid green;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+.Form > select {
+	width: 100%;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 2px solid green;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+.Form > h3 {
+	font-family: poppins;
+}
+.Form > h3 > link {
+	cursor: pointer;
+}
+
+.toggle {
+	width: 32%;
+	display: flex;
+	height: 60px;
+	flex-direction: row;
+	align-self: center;
+	justify-content: space-between;
+	background-color: rgb(191, 211, 191);
+	align-items: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+    border: 3px solid green;
+}
+.toggle > h3 {
+	width: 50%;
+	/* height:100%; */
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: poppins;
+	font-size: 17px;
+	border-radius: 5px;
+    height: 60px;
+    margin-top: 6px;
+}
+.toggle > h4 {
+    width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: orange;
+	font-family: poppins;
+	font-size: 20px;
+	border-radius: 4px;
+    height: 100%;
+    outline:none;
+}
