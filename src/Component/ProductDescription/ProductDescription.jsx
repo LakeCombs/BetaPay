@@ -59,6 +59,15 @@ function ProductDescription() {
 		);
 	};
 
+	const ProductImage = ({ description, src }) => {
+		return (
+			<div className="ProductImage">
+				<img src={src} />
+				<h3>{description}</h3>
+			</div>
+		);
+	};
+
 	return (
 		<div className="MarketPlace">
 			<>{sider ? <Side1 /> : <Side2 />}</>
@@ -93,9 +102,18 @@ function ProductDescription() {
 						</div>
 					</div>
 				</>
-				<div className="MarketPlaceContent">
-	
-<h2>hello lakes</h2>
+				<div className="productDescription">
+                    <h2>Product name</h2>
+					<div className="productImageHolder">
+                        <ProductImage description="Sitting Room"/>
+                        <ProductImage description="bathroom" />
+                        <ProductImage description="kitchen" />
+                        <ProductImage description="tiolet" />
+                     
+                    </div>
+                    <div>
+                        product description
+                    </div>
 				</div>
 			</div>
 		</div>
