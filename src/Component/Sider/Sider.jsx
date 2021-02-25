@@ -11,12 +11,12 @@ import logo from "../Photo/BetaPay.png";
 import piggy from "../Photo/piggy.gif";
 import product from "../Photo/product.png";
 
-function Sider({SideChange}) {
+function Sider() {
 	const [sider, setSider] = useState(false);
 
-	// const SideChange = () => {
-	// 	return setSider(!sider);
-	// };
+	const SideChange = () => {
+		return setSider(!sider);
+	};
 
 	const Side1 = () => {
 		return (

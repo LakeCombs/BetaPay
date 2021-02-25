@@ -13,6 +13,7 @@ import CategoryStore from "./Component/CategoryStore/CategoryStore.jsx";
 
 import MarketPlace from "./Component/MarketPlace/MarketPlace.jsx";
 import RealEstate from "./Component/RealEstate/RealEstate";
+import ProductDescription from "./Component/ProductDescription/ProductDescription";
 function App() {
 	return (
 		<Router>
@@ -31,6 +32,11 @@ function App() {
 				<Route exact path="/marketplace" component={MarketPlace} />
 				<Route exact path="/categorystore/auto" component={CategoryStore} />
 				<Route exact path="/categorystore/realestate" component={RealEstate} />
+				<Route
+					exact
+					path="/productdescription"
+					component={ProductDescription}
+				/>
 			</Switch>
 		</Router>
 	);
