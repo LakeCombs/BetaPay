@@ -2,60 +2,68 @@ import React, { useState } from "react";
 import "./CategoryStore.css";
 import { Icon, Menu, Dropdown, Button } from "antd";
 import { Link, useHistory } from "react-router-dom";
+import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import Sider from "../Sider/Sider";
-import car1 from "../Photo/benz.jpg"
+import car1 from "../Photo/benz.jpg";
+import wallet from "../Photo/Wallet.png";
+import history from "../Photo/history.png";
+import creditcard from "../Photo/CreditCard.png";
+import settings from "../Photo/settin.png";
+import logo from "../Photo/BetaPay.png";
 
 import UserProfileHeader from "../UserProfileHeader/UserProfileHeader";
 
-const menu = (
-	<Menu>
-		<Menu.Item>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				price:1.1million
-			</a>
-            <a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				color:black
-			</a>
-            <a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.alipay.com/">
-				condition:brand new
-			</a>
-
-		</Menu.Item>
-		{/* <Menu.Item>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://www.taobao.com/">
-				color:black
-			</a>
-		</Menu.Item>
-		<Menu.Item>
-			<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-				condition:Brand new
-			</a>
-		</Menu.Item> */}
-	</Menu>
-);
-
 function CategoryStore() {
-	const [sideChange, setSideChange] = useState(false);
+	const [sider, setSider] = useState(false);
 
-	const changeEffect = () => {
-		return setSideChange(!sideChange);
+	const SideChange = () => {
+		return setSider(!sider);
+	};
+
+	const Side1 = () => {
+		return (
+			<>
+				<div className="Sider1">
+					<div className="logo">
+						<img src={logo} />
+					</div>
+
+					<div className="sidercontent">
+						<img src={wallet} />
+						<h3>Wallet</h3>
+					</div>
+					<div className="sidercontent">
+						<img src={creditcard} />
+						<h3>Credit card</h3>
+					</div>
+					<div className="sidercontent">
+						<img src={history} />
+						<h3>History</h3>
+					</div>
+					<div className="sidercontent">
+						<img src={settings} />
+						<h3>Settings</h3>
+					</div>
+				</div>
+			</>
+		);
+	};
+
+	const Side2 = () => {
+		return (
+			<div className="Sider">
+				<h4 className="logoTExt">BetaPay</h4>
+				<img src={wallet} />
+				<img src={creditcard} />
+				<img src={history} />
+				<img src={settings} />
+			</div>
+		);
 	};
 
 	const CategoriesCard = ({ name, src, price }) => {
 		return (
-			<Button className="CardForProduct1">
+		
 				<div className="CardForProduct">
 					<img src={src} />
 					<div className="productDetails">
@@ -73,22 +81,51 @@ function CategoryStore() {
 						</div>
 					</div>
 				</div>
-			</Button>
+		
 		);
 	};
 
 	return (
 		<div className="MarketPlace">
-			<Sider sideChange={sideChange} />
+			<>{sider ? <Side1 /> : <Side2 />}</>
 
 			<div className="MarketPlacecontentHolder">
-				<UserProfileHeader sideChange={sideChange} />
+				<>
+					<div className="WAllentHeader ">
+						<div className="togglesider">
+							{sider ? (
+								<h1 onClick={SideChange}>
+									{" "}
+									<LeftCircleOutlined />{" "}
+								</h1>
+							) : (
+								<h1 onClick={SideChange}>
+									{" "}
+									<RightCircleOutlined />
+								</h1>
+							)}
+						</div>
+						<div className="theToper">
+							<h3>Trasaction History</h3>
+							<h3>Send payment</h3>
+							<h3>notification</h3>
+							<Link to="/marketplace" className="Link">
+								market place
+							</Link>
+							<div className="UserProfile">
+								<h3>name</h3>
+								<img />
+							</div>
+						</div>
+					</div>
+				</>
 				<div className="MarketPlaceContent">
-					<h2>Market Place</h2>
+					<div className="headerPart">
+						<h2>Auto Shop</h2> <input placeholder="find your dream car" />
+						<button>Search</button>
+					</div>
 					<div className="CategoryStore">
-						<Dropdown overlay={menu} placement="bottomCenter" arrow>
-							<CategoriesCard name="camry 2.0" src={car1} />
-						</Dropdown>
+						<CategoriesCard name="camry 2.0" src={car1} />
 						<CategoriesCard />
 						<CategoriesCard />
 						<CategoriesCard />

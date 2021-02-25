@@ -5,19 +5,6 @@ import { Link, useHistory } from "react-router-dom";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 
 function UserProfileHeader({sideChange}) {
-	// const [sider, setSider] = useState(false);
-
-	// const SideChange = () => {
-    //     return setSider(!sider);
-        
-    // };
-    // const click = ()=>{
-    //     return(
-    //         SideChange(setSider)
-    //     )
-    // }
-
-
 
 	return (
 		<>
