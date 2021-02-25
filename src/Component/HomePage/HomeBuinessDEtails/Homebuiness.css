@@ -1,0 +1,44 @@
+.HomebuninessDetils{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    /* flex-wrap:wrap; */
+    /* background-color:rgb(200, 223, 200); */
+    margin-top:10px;
+    justify-content:space-between;
+    padding-left:30px;
+    padding-right:20px;
+}
+.Home1{
+    width: 300px;
+    height:550px;
+}
+.Home1>h3{
+    width:500px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.Home3{
+    width:300px;
+    height:550px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.Home3>h2{
+    width:500px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: red;
+
+}
+.Home2{
+    height:550px;
+    width:550px;
+    border-radius:1000px;;
+    background-image:linear-gradient(to bottom, rgb(53, 182, 53), rgb(46, 175, 46));
+    margin:5px;
+    /* position:sticky; */
+}

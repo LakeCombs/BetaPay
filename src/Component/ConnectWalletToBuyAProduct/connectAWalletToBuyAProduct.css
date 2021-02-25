@@ -1,0 +1,89 @@
+.walletcontent1 {
+	/* padding: 20px; */
+	width: 100%;
+}
+
+.walletcontentHolder {
+	padding: 20px;
+	width: 100%;
+}
+.WalletcontentFirstPart1 {
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+}
+.connecttowallet {
+	margin-top: 20px;
+	margin-right: 140px;
+	width: 500px;
+	padding: 20px;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(
+		to bottom right,
+		rgb(28, 194, 28),
+		rgb(10, 84, 10),
+		rgb(5, 70, 5)
+	);
+	border-radius: 4px;
+}
+.connecttowallet > label {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	font-weight: bold;
+}
+.inputfield {
+	margin-top: 20px;
+	height: 50px;
+	font-size: 20px;
+	padding-left: 10px;
+	box-shadow: 0px 0px 1px 0px;
+	transition: all 200ms ease-out;
+}
+.inputfield:hover{
+	border:1px solid green;
+	outline:3px;
+	transform: scale(1.005);
+}
+.productDisplaySession {
+	height: 300px;
+	width: 650px;
+	/* background-color: red; */
+	margin-top: -200px;
+	display: flex;
+	flex-direction: row;
+}
+.ProductDisplay {
+	height: 100%;
+	width: 500px;
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-between;
+}
+.ProductOption {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.priductDetails {
+	margin-top: 10px;
+	color: green;
+	text-align: center;
+}
+
+.priductDetails1 {
+	margin-top: 10px;
+	color: white;
+	text-justify: center;
+	background-color: green;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height:50px;
+}
