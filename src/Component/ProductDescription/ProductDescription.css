@@ -15,7 +15,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: flex-start;
-
+	overflow-x: scroll;
 }
 
 .ProductImage {
@@ -40,8 +40,43 @@
 }
 
 .ProductImage > h3 {
-    font-weight: 25px;
-    text-align: center;
-    font-weight:bolder;
-    text-transform: uppercase;
+	font-weight: 25px;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.productDescriptionDetails {
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.productDescriptionDetails > h2 {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.theMainDescription {
+	width: 100%;
+	height: auto;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.extradetails{
+    width:45%;
+    height: auto;
+}
+
+
+.verticalLine{
+    font-size:4px;
+    width:1px;
+    height:200px;
+    background-color: rgb(63, 63, 63);
+    margin-top: -30px;
 }

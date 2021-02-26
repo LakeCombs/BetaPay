@@ -92,7 +92,7 @@ function ProductDescription() {
 							<h3>Trasaction History</h3>
 							<h3>Send payment</h3>
 							<h3>notification</h3>
-							<Link to="/marketplace" className="Link">
+							<Link to="/markproductDescriptionetplace" className="Link">
 								market place
 							</Link>
 							<div className="UserProfile">
@@ -103,17 +103,33 @@ function ProductDescription() {
 					</div>
 				</>
 				<div className="productDescription">
-                    <h2>Product name</h2>
+					<h2>Product name</h2>
 					<div className="productImageHolder">
-                        <ProductImage description="Sitting Room"/>
-                        <ProductImage description="bathroom" />
-                        <ProductImage description="kitchen" />
-                        <ProductImage description="tiolet" />
-                     
-                    </div>
-                    <div>
-                        product description
-                    </div>
+						<ProductImage description="Sitting Room" />
+						<ProductImage description="bathroom" />
+						<ProductImage description="kitchen" />
+						<ProductImage description="tiolet" />
+					</div>
+					<div className="productDescriptionDetails">
+						<h2>product description</h2>
+						<div className="theMainDescription">
+							<div className="extradetails">
+								<h3>Type: Four bed room flat</h3>
+								<h3>
+									Features:Sitting Room,4 bed room ,swimming pool, dinner, a
+									garage, a garden, a boys quarter
+								</h3>
+								<h3>Location:Banana island</h3>
+								<h3>hello lakes</h3>
+							</div>
+							<hr className="verticalLine" />
+							<div className="extradetails">
+								<h3> i am fine oh!</h3> <h4> i am fine oh!</h4>
+								<h3> i am fine oh!</h3>
+								<h3> i am fine oh!</h3>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
