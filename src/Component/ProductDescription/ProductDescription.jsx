@@ -103,7 +103,11 @@ function ProductDescription() {
 					</div>
 				</>
 				<div className="productDescription">
-					<h2>Product name</h2>
+					<div className="productNow">
+						<h2>Product name</h2>
+						<button>Buy Now</button>
+					</div>
+
 					<div className="productImageHolder">
 						<ProductImage description="Sitting Room" />
 						<ProductImage description="bathroom" />
@@ -112,6 +116,7 @@ function ProductDescription() {
 					</div>
 					<div className="productDescriptionDetails">
 						<h2>product description</h2>
+
 						<div className="theMainDescription">
 							<div className="extradetails">
 								<h3>Type: Four bed room flat</h3>
@@ -119,8 +124,8 @@ function ProductDescription() {
 									Features:Sitting Room,4 bed room ,swimming pool, dinner, a
 									garage, a garden, a boys quarter
 								</h3>
-								<h3>Location:Banana island</h3>
-								<h3>hello lakes</h3>
+								<h3>Location: Lagos island</h3>
+								<h3>price: 1.2 million </h3>
 							</div>
 							<hr className="verticalLine" />
 							<div className="extradetails">
